@@ -1,8 +1,11 @@
 {
-	"ai":{
-		"api_key":"your-api_key",
-		"base_url":"your-base_url",
-		"model":"your-model",
-		"timeout_seconds":30
+	"ai": {
+		"apiKey": "your_apiKey",
+		"baseUrl": "your_baseUrl",
+		"model": "your_model",
+		"timeoutSeconds": 30
+	},
+	"promptPaths": {
+		"PromptPath": "relative_path"
 	}
 }

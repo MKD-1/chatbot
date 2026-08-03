@@ -10,8 +10,8 @@ import (
 )
 
 type Config struct {
-	Ai         AiConfig         `json:"ai"`
-	PromptPath PromptPathConfig `json:"promptPath"`
+	Ai          AiConfig          `json:"ai"`
+	PromptPaths map[string]string `json:"prompts"`
 }
 
 type AiConfig struct {
@@ -19,10 +19,6 @@ type AiConfig struct {
 	BaseUrl        string `json:"baseUrl"`
 	Model          string `json:"model"`
 	TimeoutSeconds int    `json:"timeoutSeconds"`
-}
-type PromptPathConfig struct {
-	SystemPrompt string `json:"systemPrompt"`
-	TgPrompt     string `json:"tgPrompt"`
 }
 
 func Load(path string) (Config, error) {
