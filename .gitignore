@@ -1,8 +1,9 @@
 .vscode/
-.env
 storage.json
 goal.md
-prompts/
+/prompts/*
 config/config.json
 *.md
-!/README.md
+!README.md
+!/prompts/store.go
+!/prompts/internal.go
