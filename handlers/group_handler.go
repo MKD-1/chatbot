@@ -33,6 +33,6 @@ func GroupHandler(msg *openwechat.Message) {
 	} else if msg.IsTickled() {
 
 	} else if msg.IsText() {
-		msg.ReplyText(gtp.Talk(msg))
+		msg.ReplyText(gtp.Talk(msg, "prompts\\group_chat\\system.md"))
 	}
 }

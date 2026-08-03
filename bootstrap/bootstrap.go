@@ -23,7 +23,7 @@ func Bot_UUIDCallBack(uuid string) {
 	appLog := logger.New()
 	q, err := qrcode.New(LoginUrlPrefix+uuid, qrcode.Low)
 	if err != nil {
-		appLog.Errorf("Error generating QR code: %v", err)
+		appLog.Errorf("生成二维码失败: %v", err)
 		return
 	}
 	appLog.Infof("%v", q.ToString(true))

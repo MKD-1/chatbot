@@ -1,3 +1,6 @@
 .vscode/
 .env
 storage.json
+goal.md
+prompts/
+config/config.json

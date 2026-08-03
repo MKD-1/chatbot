@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	// "github.com/MKD-1/chatbot/logger"
+	gtp "github.com/MKD-1/chatbot/ai"
 	"github.com/eatmoreapple/openwechat"
 )
 
@@ -25,6 +25,6 @@ func FriendHandler(msg *openwechat.Message) {
 		return
 	}
 	if msg.IsText() {
-
+		msg.ReplyText(gtp.Talk(msg, "prompts\\group_chat\\system.md"))
 	}
 }

@@ -1,0 +1,8 @@
+{
+	"ai":{
+		"api_key":"your-api_key",
+		"base_url":"your-base_url",
+		"model":"your-model",
+		"timeout_seconds":30
+	}
+}
