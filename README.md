@@ -29,3 +29,7 @@ const (
 ```
 
 两个<u>注意一致</u>应**保持一致**
+
+## logger
+
+logger作为参数不传整个logger而是传细分的logger是依赖最小化原则
